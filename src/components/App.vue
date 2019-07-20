@@ -16,7 +16,6 @@ import Layout from './Layout';
 import Modal from './Modal';
 import Notification from './Notification';
 import ContextMenu from './ContextMenu';
-import SplashScreen from './SplashScreen';
 import syncSvc from '../services/syncSvc';
 import networkSvc from '../services/networkSvc';
 import tempFileSvc from '../services/tempFileSvc';
@@ -34,7 +33,6 @@ export default {
     Modal,
     Notification,
     ContextMenu,
-    SplashScreen,
   },
   data: () => ({
     ready: false,

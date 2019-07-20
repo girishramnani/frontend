@@ -137,6 +137,7 @@ const cleanSyncedContent = (syncedContent) => {
 const applyChanges = (changes) => {
   const allItemsById = { ...store.getters.allItemsById };
   const syncDataById = { ...store.getters['data/syncDataById'] };
+  console.log(allItemsById);
   const idsToKeep = {};
   let saveSyncData = false;
   let getExistingItem;
