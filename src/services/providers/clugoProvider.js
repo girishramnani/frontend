@@ -18,7 +18,7 @@ export default new Provider({
     const filename = store.state.file.itemsById[content.id.split('/')[0]].name;
     const payload = {
       filename,
-      context: content.text,
+      content: content.text,
     };
     const resp = await axios.post('/api/v1/save_file', payload);
     console.log(resp);
